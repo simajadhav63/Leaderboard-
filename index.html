@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="leaderboard">
+        <h1>Leaderboard</h1>
+
+        <form id="addPlayerForm">
+            <input type="text" id="playerName" placeholder="Player Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="country" placeholder="country">
+            <input type="text" id="score" placeholder="score">
+            <button type="button" onclick="addPlayer()">Add Player</button>
+          </form>
+<br>
+<br>
+        <table>
+          <thead>
+            <tr>
+              <th>Player Name</th>
+              <th>Last Name</th>
+              <th>Country</th>
+              <th>Score</th>
+              <th>Rank</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="playerList">
+            <!-- Player entries will be inserted here dynamically -->
+          </tbody>
+        </table>
+        
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
